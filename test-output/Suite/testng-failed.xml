@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Automation.ListenersTest"/>
+  </listeners>
+  <test thread-count="5" name="E2E testing(failed)">
+    <classes>
+      <class name="Automation.MainShopingTest">
+        <methods>
+          <include name="ShopingAddToBasket"/>
+          <include name="initializeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Automation.MainShopingTest -->
+    </classes>
+  </test> <!-- E2E testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="Automation.ListenersTest"/>
+</listeners>
+
+  <test thread-count="5" name="E2E testing">
+    <classes>
+      <class name="Automation.MainShopingTest"/>
+    </classes>
+  </test>
+  
+ <!-- <test thread-count="5" name="Test Login">
+    <classes>      
+      <class name="Automation.LogInTest"/>    
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="Test Signin">
+    <classes>
+      <class name="Automation.HomePageTest"/>
+    </classes>
+  </test>  -->
+  
+</suite> 
